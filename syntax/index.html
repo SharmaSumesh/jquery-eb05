@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- // by tag name -->
+    <!-- <h1>hello sumesh</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nihil laudantium accusamus!</p>
+    <button>hide</button> -->
+    <!-- // by id -->
+    <!-- <div id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam provident sint voluptatibus.</div>
+    <button>hide</button> -->
+    <!-- <div class="second">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit necessitatibus quasi quibusdam. Eaque itaque necessitatibus aliquam temporibus facilis provident dolorem velit quos consequatur!
+    </div>
+    <button>hide</button> -->
+    <!-- <p>type of selector</p>
+    <ul>
+        <li>$("*")</li>
+        <li>$(this)</li>
+        <li>$("p.first")</li>
+        <li>$("p.intro")</li>
+        <li>$("ul li:first")</li>
+    </ul>
+    <button>hide</button> -->
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolore magnam optio?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, tempora distinctio, aliquid totam, quia molestias commodi sit dolorum aspernatur voluptatum minus adipisci at.</p>
+    <button>ok</button> -->
+    <!-- if else -->
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugiat eveniet sunt.</p>
+    <button id="button">show and hide</button>
+</body>
+<script>
+    // $(document).ready(function()
+    // {
+    //     $("button").click(function()
+    //     {
+    //         $("p,h1").hide();
+    //     })
+    // })
+    // by id
+    // $(document).ready(function()
+    // {
+    //     $("button").click(function()
+    //     {
+    //         $("#first").hide();
+    //     })
+    // })
+    //by class
+    // $(document).ready(function()
+    // {
+    //     $("button").click(function()
+    //     {
+    //         $(".second").hide();
+    //     })
+    // })
+    // $("*")
+// '    // $(document).ready(function()
+    // {
+    //     $("button").click(function()
+    //     {
+    //         $("*").hide();
+    //     })
+    // })'
+    // this
+    // $(document).ready(function()
+    // {
+    //     $("button").click(function()
+    //     {
+    //         $(this).hide();
+    //     })
+    // })
+    // P:first
+    // $(document).ready(function()
+    // {
+    //     $("button").click(function()
+    //     {
+    //         $("p:first").hide();
+    //     })
+    // })
+    // $("ul li:even");
+    // $("ul li:odd");
+    $(document).ready(function()
+    {
+        $("button").click(function()
+        {
+            if($(".text").is(':hidden'))
+            {
+                $('.text').show();
+            }
+            else
+            {
+                $('.text').hide();
+            }
+        })
+    })
+</script>
+</html>
