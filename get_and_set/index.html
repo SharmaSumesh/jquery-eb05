@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <ul>
+        <li>text(only text show)</li>
+        <li>html(include the all tag)</li>
+        <li>val</li>
+    </ul>
+    <p>Lorem ipsum <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet praesentium inventore earum.</span>dolor sit amet consectetur adipisicing elit. Enim ullam possimus molestiae.</p>
+    <button id="btn1">show text</button>
+    <button id="btn2">show html</button>
+    <input type="text" id="input" value="Sumesh"/>
+    <button id="btn3">val</button>
+</body>
+<script>
+    // $(document).ready(function()
+    // {
+    //     $("#btn1").click(function()
+    //     {
+    //         alert($("p").text());
+    //     })
+    //     $("#btn2").click(function()
+    //     {
+    //         alert($("p").html());
+    //     })
+    //     // value
+    //     $("#btn3").click(function()
+    //     {
+    //         alert($("#input").val());
+    //     })
+
+    // })
+    //set method 
+    $(document).ready(function()
+    {
+        $("#btn1").click(function()
+        {
+            $("p").text("hello sumesh");
+        })
+        $("#btn2").click(function()
+        {
+            $("p").html("<h1>hello this is html</h1>");
+        })
+        // value
+        $("#btn3").click(function()
+        {
+            alert($("#input").val());
+        })
+
+    })
+</script>
+</html>

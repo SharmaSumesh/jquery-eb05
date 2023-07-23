@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #flip,#data
+    {
+        height: 100px;
+        width: 100%;
+        background-color: red;
+        text-align: center;
+    }
+    #data
+    {
+        display: none;
+    }
+    </style>
+  
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p>$(selector).stop(stopall,gotoend)</p>
+    <button id="stop">stop</button>
+    <div id="flip">Lorem, ipsum dolor.</div>
+    <div id="data">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, accusamus consequuntur laboriosam illo cupiditate omnis nobis suscipit exercitationem voluptate architecto eligendi nisi tenetur.</div>
+  
+</body>
+<script>
+    $(document).ready(function()
+{
+    $("#flip").click(function()
+    {
+        $("#data").slideDown(5000)
+    })
+    // $("#flip").click(function()
+    // {
+    //     $("#data").slideUp("slow");
+    // })
+    $("#stop").click(function()
+    {
+        $("#data").stop();
+    })
+})
+</script>
+
+</html>
